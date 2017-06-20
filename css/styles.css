@@ -1,0 +1,11 @@
+/*
+.list-elements {
+  cursor: pointer;
+  color: #0088cc;
+}
+*/
+.list-elements:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0088cc;
+}
