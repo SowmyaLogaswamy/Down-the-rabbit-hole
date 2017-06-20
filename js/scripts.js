@@ -5,9 +5,21 @@ function resetOutput() {
   $("#element2-trigger").hide();
   $("#element2b-trigger").hide();
   $("#element2-details").hide();
+  $("#element3-trigger").hide();
+  $("#element3-details").hide();
+  $("#element4-trigger").hide();
+  $("#element4-details").hide();
 }
 
+
+
 $(document).ready(function() {
+  // $(".bxslider").bxSlider({
+  //    auto: true,
+  //    autoControls: true
+  //  });
+
+
 
   $("li#element1-id").click(function() {
     resetOutput();
@@ -30,5 +42,28 @@ $(document).ready(function() {
   $("#element2b-trigger").click(function() {
     $("div#element2-details").fadeOut();
   });
+
+  $("li#element3-id").click(function() {
+    resetOutput();
+    $("#element3-trigger").show();
+  });
+
+  $("#element3-trigger").click(function() {
+    $("#element3-details").toggle();
+  });
+
+  $("li#element4-id").click(function() {
+    resetOutput();
+    $("#element4-trigger").show();
+  });
+
+  $("#element4-trigger").click(function() {
+    $("#element4-details").show();
+    $(".bxslider").bxSlider({
+       auto: true,
+       autoControls: true
+     });
+
+   });
 
 });
