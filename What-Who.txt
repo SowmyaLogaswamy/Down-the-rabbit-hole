@@ -1,0 +1,25 @@
+﻿Ideas for group project
+
+
+Fade - Joel
+toggle(); - Sowmya
+animate(); - Mick
+Random number generator - Laura
+Time and date - Joel 
+Slideshow - Sowmya
+Color selector - Laura
+Audio track returner - Laura
+Button (click, on, off) - Sowmya
+Mouse (over, on, off, down up) Joel
+screenX, screenY - Joel
+Keyup - Nobody
+Rotate - Mick
+Change input field color Sowmya
+Input text to uppercase - Joel
+On copy - Sowmya
+Math functions Laura
+Transition delay - Mick
+Transition and transform - Mick
+Select text over image - Mick
+Map w/ current location - Laura
+Language translator - Laura
