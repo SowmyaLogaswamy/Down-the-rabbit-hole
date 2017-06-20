@@ -11,16 +11,13 @@ function resetOutput() {
   $("#element4-details").hide();
   $("#element5-trigger").hide();
   $("#element5-details").hide();
+  $("#element6-trigger").hide();
+  $("#element6-details").hide();
 }
 
 
 
 $(document).ready(function() {
-  // $(".bxslider").bxSlider({
-  //    auto: true,
-  //    autoControls: true
-  //  });
-
 
 
   $("li#element1-id").click(function() {
@@ -77,6 +74,20 @@ $(document).ready(function() {
    });
    $("#element5-trigger").mouseout(function() {
      $("#element5-details").hide();
+   });
+
+   $("li#element6-id").click(function() {
+     resetOutput();
+     $("#element6-trigger").show();
+   });
+
+   $("#element6-trigger").click(function() {
+    //  $("#element6-trigger").append('<li id="element6-id">'+'<marquee direction="left" width="80" height="20" behavior="alternate">' + Click me to dance! + '</li>');
+      //console.log('trigger 6 called');
+      var bounce = "I am bouncing";
+      $("#element6-trigger").append('<p class="bg-ping-pong"><marquee direction="down" width="100" height="30" behavior="alternate">'+bounce+'</p');
+      $("#element6-details").show();
+
    });
 
 });
