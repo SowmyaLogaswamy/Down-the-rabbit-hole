@@ -10,15 +10,18 @@
   color: #0088cc;
 }
 
-
-/*#element1-trigger {
+/*.all-element-triggers {
   display: none;
 }*/
 
-#element1-details {
+/*.all-element-details{
+  display: none;
+}*/
+
+#element1-clickbutton, #element2-trigger {
   display: none;
 }
 
-#element1-clickbutton {
+#element1-details, #element2-details {
   display: none;
 }

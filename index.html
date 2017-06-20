@@ -17,12 +17,9 @@
         <div class="col-xs-6">
           <h4>Interact with an element below</h4>
           <ul>
-            <li class="list-elements" id="element1-id">Click Button
-              <div class="all-element-triggers" id="element1-clickbutton">
-                <button type="button" id="element1-trigger">Click Me</button>
-              </div>
-            </li>
-            <li class="list-elements">Fade</li>
+            <li class="list-elements" id="element1-id">Click Button</li>
+            <button type="button" id="element1-clickbutton" class="btn">Click Me</button>
+            <li class="list-elements" id="element2-id">Fade</li><p id="element2-trigger">This is Fade</p>
             <li class="list-elements">Toggle</li>
             <li class="list-elements">Image Slider</li>
           </ul>
@@ -33,6 +30,10 @@
           <div class="all-element-details" id="element1-details">
             <p>Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
             <p>$("#element1-trigger").click(function() {SHOW SOME TEXT});</p>
+          </div>
+          <div class="all-element-details" id="element2-details">
+            <p>Details for ELEMENT 2</p>
+            
           </div>
 
         </div>
