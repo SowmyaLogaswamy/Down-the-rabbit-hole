@@ -10,15 +10,18 @@
   color: #0088cc;
 }
 
-/*.all-element-triggers {
-  display: none;
-}*/
+.code {
+  background-color: #ffcc99;
+}
 
-/*.all-element-details{
-  display: none;
-}*/
+.all-triggers {
+  background-color: skyblue;
+}
 
-#element1-clickbutton, #element2-trigger {
+
+
+
+#element1-clickbutton, #element2-trigger, #element2b-trigger  {
   display: none;
 }
 

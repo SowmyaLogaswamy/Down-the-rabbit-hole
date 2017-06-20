@@ -18,8 +18,9 @@
           <h4>Interact with an element below</h4>
           <ul>
             <li class="list-elements" id="element1-id">Click Button</li>
-            <button type="button" id="element1-clickbutton" class="btn">Click Me</button>
-            <li class="list-elements" id="element2-id">Fade</li><p id="element2-trigger">This is Fade</p>
+            <button type="button" id="element1-clickbutton" class="btn btn-primary">Click Me</button>
+            <li class="list-elements" id="element2-id">Fade</li><p class="all-triggers" id="element2-trigger">Click on this text to see a Fade In</p>
+            <p class="all-triggers" id="element2b-trigger">Click on this text to see a Fade Out</p>
             <li class="list-elements">Toggle</li>
             <li class="list-elements">Image Slider</li>
           </ul>
@@ -29,10 +30,11 @@
           <h4>What's happening behind the curtain</h4>
           <div class="all-element-details" id="element1-details">
             <p>Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
-            <p>$("#element1-trigger").click(function() {SHOW SOME TEXT});</p>
+            <p class="code">$("#element1-trigger").click(function() {SHOW SOME TEXT});</p>
           </div>
           <div class="all-element-details" id="element2-details">
-            <p>Details for ELEMENT 2</p>
+            <p class="detail">By clicking on the Fade In text, the output will now fade in instead of appearing all at once.</p>
+            <p class="code">$("#element2-trigger").click(function() {$("element2-details").fadeIn();});</p>
 
           </div>
 
