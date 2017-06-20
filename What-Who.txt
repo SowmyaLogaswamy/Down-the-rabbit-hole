@@ -23,3 +23,4 @@ Transition and transform - Mick
 Select text over image - Mick
 Map w/ current location - Laura
 Language translator - Laura
+bouncing text on mouseover - Various
