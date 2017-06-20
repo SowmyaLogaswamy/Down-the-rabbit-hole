@@ -23,6 +23,8 @@
             <p class="all-triggers" id="element2b-trigger">Click on this text to see a Fade Out</p>
             <li class="list-elements" id="element3-id">Toggle</li><p class="all-triggers" id="element3-trigger">Toggle Me</p>
             <li class="list-elements" id="element4-id">Image Slider</li><p class="all-triggers" id="element4-trigger">Click this Text to see a Slideshow</p>
+            <li class="list-elements" id="element5-id">Mouse Over/Out</li><p class="all-triggers" id="element5-trigger">Move the pointer over this paragraph and see what happens...if you dare</p>
+
           </ul>
 
         </div>
@@ -52,6 +54,12 @@
                autoControls: true
              });</p>
           </div>
+          <div class="all-element-details" id="element5-details">
+            <p class="detail">blah blah ELEMENT 5</p>
+            <p class="code">$("#element5-trigger").click(function() {$("element3-details").toggle();});</p>
+          </div>
+
+
         </div>
       </div>
     </div>

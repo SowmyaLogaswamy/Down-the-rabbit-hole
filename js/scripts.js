@@ -9,6 +9,8 @@ function resetOutput() {
   $("#element3-details").hide();
   $("#element4-trigger").hide();
   $("#element4-details").hide();
+  $("#element5-trigger").hide();
+  $("#element5-details").hide();
 }
 
 
@@ -63,7 +65,18 @@ $(document).ready(function() {
        auto: true,
        autoControls: true
      });
+   });
 
+   $("li#element5-id").click(function() {
+     resetOutput();
+     $("#element5-trigger").show();
+   });
+
+   $("#element5-trigger").mouseover(function() {
+     $("#element5-details").show();
+   });
+   $("#element5-trigger").mouseout(function() {
+     $("#element5-details").hide();
    });
 
 });
