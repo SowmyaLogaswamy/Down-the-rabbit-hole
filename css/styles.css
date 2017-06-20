@@ -9,3 +9,16 @@
   cursor: pointer;
   color: #0088cc;
 }
+
+
+/*#element1-trigger {
+  display: none;
+}*/
+
+#element1-details {
+  display: none;
+}
+
+#element1-clickbutton {
+  display: none;
+}
