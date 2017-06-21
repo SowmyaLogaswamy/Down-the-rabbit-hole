@@ -12,7 +12,7 @@ Audio track returner - Laura
 Button (click, on, off) - Sowmya - DONE - ADDED
 Mouse (over/out) - Joel - DONE - ADDED
 Mouse (on/off) - Joel
-Mouse (down up) Joel
+Mouse (up/down) Joel - DONE - 
 screenX, screenY - Joel - DONE -
 Keyup - Nobody
 Rotate - Mick
