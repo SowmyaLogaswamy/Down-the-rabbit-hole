@@ -15,6 +15,9 @@ function resetOutput() {
   $("#element6-details").hide();
   $("#element7-trigger").hide();
   $("#element7-details").hide();
+  $("#element8-trigger").hide();
+  $("#element8-details").hide();
+
 }
 
 
@@ -101,5 +104,24 @@ $(document).ready(function() {
    $(document).mousemove(function(event){
      $("span#mm").text(event.pageX + ", " + event.pageY);
    });
+
+   $("li#element8-id").click(function() {
+     resetOutput();
+     $("#element8-trigger").show();
+   });
+
+   $("#element8-trigger").click(function() {
+     $("#element8-details").show();
+
+     $("p#element8-trigger").mousedown(function(){
+       $("#mud").text('MOUSE CLICKED.');
+     });
+     $("p#element8-trigger").mouseup(function() {
+       $("#mud").text('MOUSE RELEASED.');
+     });
+
+
+   });
+
 
 });
