@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Down the rabbit hole</h1>
-      <h3>Interactive excercises with Javascript/Css/Html</h3>
+      <h1>Down The Rabbit Hole</h1>
+      <h3>Interactive exercises with Javascript/CSS/Html</h3>
       <div class="row">
-        <div class="col-xs-6">
+        <div id="left-col" class="col-xs-6">
           <h4>Interact with an element below</h4>
           <ol>
             <li class="list-elements" id="element1-id">Click Button</li>
@@ -69,8 +69,7 @@
               <h3 id="area-output"></h3>
             </div>
             <li class="list-elements" id="element13-id">Code and Color</li><div class="all-triggers" id="element13-trigger">
-              <p id="color-paragraph">Click on the color to change the background of the page using
-              control.</p>
+              <p id="color-paragraph">Click on the color to choose a different color code.</p>
               <label for="colorWell">Change the color:</label>
               <input type="color" id="colorWell">
               <p>Color Code is: <span id="color-code"></span></p>
@@ -81,7 +80,7 @@
           </ol>
 
         </div>
-        <div class="col-xs-6">
+        <div id="right-col" class="col-xs-6">
           <h4>What's happening behind the curtain</h4>
           <div class="all-element-details" id="element1-details">
             <p>Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
