@@ -16,6 +16,16 @@ function windowMove() {
   myWindow.document.write("Drag me around and click the Window Position text again <hr>");
 }
 
+function newMap(inputLatitude, inputLongitude) {
+var mapProp= {
+    center:new google.maps.LatLng(inputLatitude,inputLongitude),
+    zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+}
+
+
 $(document).ready(function() {
 
   $("li#element1-id").click(function() {
@@ -121,16 +131,21 @@ $(document).ready(function() {
 
    $("#element9-trigger").click(function() {
      $("#element9-details").show();
-    //  function xy() {
-    //    var myWindow = window.open("", "window position", "left=0, top=0, width=200, height=400");
-    //    var winLeft = myWindow.screenLeft ? myWindow.screenLeft : myWindow.screenX;
-    //    var winTop = myWindow.screenTop ? myWindow.screenTop : myWindow.screenY;
-     //
-    //    myWindow.document.write("<p>Window Position");
-    //    myWindow.document.write("<br><strong>Horizontal: </strong>" + winLeft);
-    //    myWindow.document.write("<br><strong>Vertical: </strong>" + winTop + "</p>");
-    //    myWindow.document.write("Drag me around and click the Window Position text again <hr>");
-    //  }
+   });
+
+   $("li#element10-id").click(function() {
+     $("input#latitude").val('');
+     $("input#longitude").val('');
+     resetOutput();
+     $("#element10-trigger").show();
+     myMap();
+     $("#element10-details").show();
+   });
+
+   $("#map-button").click(function() {
+     var inputLatitude = parseFloat($("input#latitude").val());
+     var inputLongitude = parseFloat($("input#longitude").val());
+     newMap(inputLatitude, inputLongitude);
    });
 
 
