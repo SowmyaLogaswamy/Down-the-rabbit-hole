@@ -35,6 +35,34 @@ function pieArea(inputRadius) {
   return Math.round(pieAreaResult);
 }
 
+var colorWell
+var defaultColor = "#ff0000";
+
+window.addEventListener("load", startup, false);
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+  $("#color-code").text(colorWell.value);
+}
+function updateFirst(event) {
+ var p = document.querySelector("#color-paragraph");
+
+ if (p) {
+   p.style.color = event.target.value;
+ }
+}
+function updateAll(event) {
+ document.querySelectorAll("#color-paragraph").forEach(function(p) {
+   p.style.color = event.target.value;
+   //alert(colorWell.value);
+  $("#color-code").text(colorWell.value);
+
+ });
+}
+
 
 //USER INTERFACE LOGIC
 function resetOutput() {
@@ -184,10 +212,15 @@ $(document).ready(function() {
 
    $("#pie-button").click(function() {
      $("#element12-details").show();
-    // var randomNumber = createRandomNumber();
       var inputRadius = parseFloat($("input#diameter").val())/2;
      $("#area-output").text(pieArea(inputRadius));
    });
 
+   $("li#element13-id").click(function() {
+     resetOutput();
+     $("#element13-trigger").show();
+     $("#element13-details").show();
+     //$("#color-code").text(colorWell.value);
+   });
 
 });
