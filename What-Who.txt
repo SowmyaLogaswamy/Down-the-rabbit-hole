@@ -4,20 +4,21 @@
 Fade - Joel - DONE - ADDED
 toggle(); - Sowmya - DONE - ADDED
 animate(); - Mick
-Random number generator - Laura
-Time and date - Joel 
+Random number generator - Laura - DONE -
+Time and date - Joel - DONE -
 Slideshow - Sowmya - DONE - ADDED
 Color selector - Laura - DONE
 Audio track returner - Laura
 Button (click, on, off) - Sowmya - DONE - ADDED
 Mouse (over/out) - Joel - DONE - ADDED
-Mouse (on/off) - Joel
+Mouse (on/off) - Joel - DONE - 
+Mouse (x/y) position - Joel - DONE - ADDED
 Mouse (up/down) Joel - DONE - 
-screenX, screenY - Joel - DONE -
-Keyup - Nobody
+screenX, screenY - Joel - DONE -ADDED
+Keyup - Joel - DONE -
 Rotate - Mick
 Change input field color Sowmya
-Input text to uppercase - Joel
+Input text to uppercase - Joel - DONE -
 On copy - Sowmya
 Math functions Laura
 Transition delay - Mick
