@@ -20,7 +20,7 @@ Rotate - Mick
 Change input field color Sowmya
 Input text to uppercase - Joel - DONE -
 On copy - Sowmya
-Math functions Laura
+Math functions Laura - DONE - 
 Transition delay - Mick
 Transition and transform - Mick
 Select text over image - Mick
