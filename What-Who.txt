@@ -4,7 +4,7 @@
 Fade - Joel - DONE - ADDED
 toggle(); - Sowmya - DONE - ADDED
 animate(); - Mick
-Random number generator - Laura
+Random number generator - Laura - DONE -
 Time and date - Joel - DONE -
 Slideshow - Sowmya - DONE - ADDED
 Color selector - Laura - DONE
