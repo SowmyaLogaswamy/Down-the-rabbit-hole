@@ -10,10 +10,10 @@ Slideshow - Sowmya - DONE - ADDED
 Color selector - Laura - DONE
 Audio track returner - Laura
 Button (click, on, off) - Sowmya - DONE - ADDED
-Mouse (over/out) - Joel
-Mouse (on/off) 
-Mouse down up) Joel
-screenX, screenY - Joel - DONE
+Mouse (over/out) - Joel - DONE - ADDED
+Mouse (on/off) - Joel
+Mouse (down up) Joel
+screenX, screenY - Joel - DONE -
 Keyup - Nobody
 Rotate - Mick
 Change input field color Sowmya
@@ -24,5 +24,4 @@ Transition delay - Mick
 Transition and transform - Mick
 Select text over image - Mick
 Map w/ current location - Laura - DONE - 
-
 bouncing text on mouseover - Various - DONE - ADDED
