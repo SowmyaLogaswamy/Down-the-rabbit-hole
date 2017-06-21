@@ -25,6 +25,16 @@ function createRandomNumber() {
   return x;
 }
 
+function circle(radius) {
+  this.radius = radius;
+  return Math.PI * (this.radius * this.radius);
+}
+function pieArea(inputRadius) {
+//  var inputRadius = $("input#diameter").val()/2;
+  var pieAreaResult = circle(inputRadius);
+  return Math.round(pieAreaResult);
+}
+
 
 //USER INTERFACE LOGIC
 function resetOutput() {
@@ -165,6 +175,18 @@ $(document).ready(function() {
      $("#element11-details").show();
      var randomNumber = createRandomNumber();
      $("#random-number-output").text(randomNumber);
+   });
+
+   $("li#element12-id").click(function() {
+     resetOutput();
+     $("#element12-trigger").show();
+   });
+
+   $("#pie-button").click(function() {
+     $("#element12-details").show();
+    // var randomNumber = createRandomNumber();
+      var inputRadius = parseFloat($("input#diameter").val())/2;
+     $("#area-output").text(pieArea(inputRadius));
    });
 
 
