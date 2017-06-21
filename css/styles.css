@@ -13,10 +13,14 @@
   background-color: skyblue;
 }
 
-#element1-clickbutton, #element2-trigger, #element2b-trigger, #element3-trigger, #element4-trigger, #element5-trigger, #element6-trigger, #element7-trigger, #element8-trigger  {
+#element1-clickbutton  {
   display: none;
 }
 
-#element1-details, #element2-details, #element3-details, #element4-details, #element5-details, #element6-details, #element7-details, #element8-details {
+.all-triggers {
+  display: none;
+}
+
+.all-element-details {
   display: none;
 }

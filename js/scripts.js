@@ -1,23 +1,8 @@
 //USER INTERFACE LOGIC
 function resetOutput() {
   $("#element1-clickbutton").hide();
-  $("#element1-details").hide();
-  $("#element2-trigger").hide();
-  $("#element2b-trigger").hide();
-  $("#element2-details").hide();
-  $("#element3-trigger").hide();
-  $("#element3-details").hide();
-  $("#element4-trigger").hide();
-  $("#element4-details").hide();
-  $("#element5-trigger").hide();
-  $("#element5-details").hide();
-  $("#element6-trigger").hide();
-  $("#element6-details").hide();
-  $("#element7-trigger").hide();
-  $("#element7-details").hide();
-  $("#element8-trigger").hide();
-  $("#element8-details").hide();
-
+  $(".all-triggers").hide();
+  $(".all-element-details").hide();
 }
 
 
@@ -112,15 +97,12 @@ $(document).ready(function() {
 
    $("#element8-trigger").click(function() {
      $("#element8-details").show();
-
      $("p#element8-trigger").mousedown(function(){
        $("#mud").text('MOUSE CLICKED.');
      });
      $("p#element8-trigger").mouseup(function() {
        $("#mud").text('MOUSE RELEASED.');
      });
-
-
    });
 
 
