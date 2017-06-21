@@ -1,17 +1,19 @@
 ﻿Ideas for group project
 
 
-Fade - Joel
-toggle(); - Sowmya
+Fade - Joel - DONE - ADDED
+toggle(); - Sowmya - DONE - ADDED
 animate(); - Mick
 Random number generator - Laura
 Time and date - Joel 
-Slideshow - Sowmya
-Color selector - Laura
+Slideshow - Sowmya - DONE - ADDED
+Color selector - Laura - DONE
 Audio track returner - Laura
-Button (click, on, off) - Sowmya
-Mouse (over, on, off, down up) Joel
-screenX, screenY - Joel
+Button (click, on, off) - Sowmya - DONE - ADDED
+Mouse (over/out) - Joel - DONE - ADDED
+Mouse (on/off) - Joel
+Mouse (up/down) Joel - DONE - 
+screenX, screenY - Joel - DONE -
 Keyup - Nobody
 Rotate - Mick
 Change input field color Sowmya
@@ -21,6 +23,5 @@ Math functions Laura
 Transition delay - Mick
 Transition and transform - Mick
 Select text over image - Mick
-Map w/ current location - Laura
-Language translator - Laura
-bouncing text on mouseover - Various
+Map w/ current location - Laura - DONE - 
+bouncing text on mouseover - Various - DONE - ADDED
