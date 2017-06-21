@@ -1,9 +1,4 @@
-//USER INTERFACE LOGIC
-function resetOutput() {
-  $("#element1-clickbutton").hide();
-  $(".all-triggers").hide();
-  $(".all-element-details").hide();
-}
+//BUSINESS LOGIC
 
 function windowMove() {
   var myWindow = window.open("", "window position", "left=0, top=0, width=200, height=400");
@@ -23,6 +18,19 @@ var mapProp= {
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
+}
+
+function createRandomNumber() {
+  var x = Math.floor((Math.random() * 100) + 1);
+  return x;
+}
+
+
+//USER INTERFACE LOGIC
+function resetOutput() {
+  $("#element1-clickbutton").hide();
+  $(".all-triggers").hide();
+  $(".all-element-details").hide();
 }
 
 
@@ -146,6 +154,17 @@ $(document).ready(function() {
      var inputLatitude = parseFloat($("input#latitude").val());
      var inputLongitude = parseFloat($("input#longitude").val());
      newMap(inputLatitude, inputLongitude);
+   });
+
+   $("li#element11-id").click(function() {
+     resetOutput();
+     $("#element11-trigger").show();
+   });
+
+   $("#random-button").click(function() {
+     $("#element11-details").show();
+     var randomNumber = createRandomNumber();
+     $("#random-number-output").text(randomNumber);
    });
 
 
