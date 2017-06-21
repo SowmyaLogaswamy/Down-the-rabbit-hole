@@ -27,8 +27,12 @@
             <li class="list-elements" id="element6-id">Bouncer</li>
             <p class="all-triggers" id="element6-trigger">Click on me to bounce</p>
             <li class="list-elements" id="element7-id">XY Coordinates</li><p class="all-triggers" id="element7-trigger">Move Mouse to See XY Coordinates on Browser Window. Current coordinates are <span id="mm"></span></p>
-
             <li class="list-elements" id="element8-id">Mouse Up/Down</li><p class="all-triggers" id="element8-trigger">Press down, hold, and then release the mouse button over this div element area.<br><br><span id="mud"></span></p>
+
+            <li class="list-elements" id="element9-id">New Window</li><div id="element9-trigger" class="all-triggers"><p>Click this text to create a new window and get the horizontal coordinates of the new window relative to the screen. Drag the pop-up window around and click the text again</p>
+            <button onclick="windowMove()">Window Position</button></div>
+
+
 
           </ol>
 
@@ -75,7 +79,10 @@
             <p class="detail">blah blah ELEMENT 8</p>
             <p class="code">$("#element8-trigger").click(function() {$("element8-details").toggle();});</p>
           </div>
-
+          <div class="all-element-details" id="element9-details">
+            <p class="detail">blah blah ELEMENT 9</p>
+            <p class="code">$("#element8-trigger").click(function() {$("element9-details").toggle();});</p>
+          </div>
 
         </div>
       </div>

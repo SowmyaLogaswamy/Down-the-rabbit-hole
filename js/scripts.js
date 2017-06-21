@@ -5,7 +5,16 @@ function resetOutput() {
   $(".all-element-details").hide();
 }
 
+function windowMove() {
+  var myWindow = window.open("", "window position", "left=0, top=0, width=200, height=400");
+  var winLeft = myWindow.screenLeft ? myWindow.screenLeft : myWindow.screenX;
+  var winTop = myWindow.screenTop ? myWindow.screenTop : myWindow.screenY;
 
+  myWindow.document.write("<p>Window Position");
+  myWindow.document.write("<br><strong>Horizontal: </strong>" + winLeft);
+  myWindow.document.write("<br><strong>Vertical: </strong>" + winTop + "</p>");
+  myWindow.document.write("Drag me around and click the Window Position text again <hr>");
+}
 
 $(document).ready(function() {
 
@@ -103,6 +112,25 @@ $(document).ready(function() {
      $("p#element8-trigger").mouseup(function() {
        $("#mud").text('MOUSE RELEASED.');
      });
+   });
+
+   $("li#element9-id").click(function() {
+     resetOutput();
+     $("#element9-trigger").show();
+   });
+
+   $("#element9-trigger").click(function() {
+     $("#element9-details").show();
+    //  function xy() {
+    //    var myWindow = window.open("", "window position", "left=0, top=0, width=200, height=400");
+    //    var winLeft = myWindow.screenLeft ? myWindow.screenLeft : myWindow.screenX;
+    //    var winTop = myWindow.screenTop ? myWindow.screenTop : myWindow.screenY;
+     //
+    //    myWindow.document.write("<p>Window Position");
+    //    myWindow.document.write("<br><strong>Horizontal: </strong>" + winLeft);
+    //    myWindow.document.write("<br><strong>Vertical: </strong>" + winTop + "</p>");
+    //    myWindow.document.write("Drag me around and click the Window Position text again <hr>");
+    //  }
    });
 
 
