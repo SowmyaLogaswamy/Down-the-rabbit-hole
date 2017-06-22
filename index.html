@@ -143,12 +143,14 @@
             <p class="code">$("#element11-trigger").click(function() {$("element11-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element12-details">
-            <p class="detail">This is a math equation using Math.PI and some simple multiplication and division to determine the area of a pie.</p>
-            <p class="code">$("#element12-trigger").click(function() {$("element12-details").toggle();});</p>
+
+            <p class="detail">This is actually two functions. The first calculates the area of the circle, and the second rounds it to the nearest integer. We also need to first parse the String input to an integer or float.</p>
+            <p class="code">var inputRadius = parseFloat($("input#diameter").val())/2;<br>var pieArea = Math.PI*(inputRadius*inputRadius);<br>pieArea = Math.round(pieArea);</p>
           </div>
           <div class="all-element-details" id="element13-details">
-            <p class="detail">This is an html form input type. We are using it in combination with our style sheet to change the color of the targeted html element.</p>
-            <p class="code">$("#element13-trigger").click(function() {$("element13-details").toggle();});</p>
+            <p class="detail">The Color Picker is actually a HTML element, but we use a function in JS to grab the color code and display it on the page, as well as change the text to that color.</p>
+            <p class="code">HTML:<br>input type="color" id="colorWell"<br><br>Javascript Function:<br>colorWell.addEventListener('input', updateFirst, false);<br>colorWell.addEventListener('change', updateAll, false);<br>colorWell.select();<br>$("#color-code").text(colorWell.value);</p>
+
           </div>
         </div>
       </div>
@@ -159,16 +161,19 @@
 
               <div id="introPage">
                 <div class="jumbotron">
+                  <div class="jumbotron" id="jumboid">
                 <h1> Quiz (HTML/CSS/Javascript/JQuery)</h1>
                 <p> Please go through the questions and choose the best answer for it</p>
-                <button type="submit" class="btn" id="startButton">GET STARTED TO RACE!</button>
+                <button type="submit" class="btn btn-primary" id="startButton">GET STARTED TO RACE!</button>
               </div>
+            </div>
                 </div>
 
 
                 <div id="questionOne" class="questions">
                   <form id="questionOneForm">
                     <div class="jumbotron">
+                        <div class="jumbotron" id="jumboid">
                     What other method is typically used with Math.random to return a whole number?
                     <div class="radio">
                       <input type="radio" name="quest1" value="oa">.toString()<br>
@@ -176,13 +181,16 @@
                       <input type="radio" name="quest1" value="oc">.concat()
                     </div>
                     <button type="submit" class="btn btn-primary" id="quest1Button">BANG</button>
+                    <p class="result"></p>
                   </form>
+                  </div>
                 </div>
               </div>
 
                 <div id="questionTwo" class="questions">
                   <form id="questionTwoForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Only buttons can be click listeners. Is the statement true or false?
                     <div class="radio">
                       <input type="radio" name="quest2" value="2a"> true<br>
@@ -193,10 +201,12 @@
                   </form>
                 </div>
                 </div>
+                </div>
 
                 <div id="questionThree" class="questions">
                   <form id="questionThreeForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which function is great for switching between two states?
                     <div class="radio">
                       <input type="radio" name="quest3" value="3a"> fadeIn()<br>
@@ -206,11 +216,13 @@
                     <button type="submit" class="btn btn-primary" id="quest3Button">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="questionFour" class="questions">
                   <form id="questionFourForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which type of value the latitude and longitude input fields take in?
                     <div class="radio">
                       <input type="radio" name="quest4" value="4a"> Integers<br>
@@ -220,11 +232,13 @@
                     <button type="submit" class="btn btn-primary" id="quest4Button">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="questionFive" class="questions">
                   <form id="questionFiveForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which language is responsible for displaying the color picker?
                     <div class="radio">
                       <input type="radio" name="quest5" value="5a"> HTML<br>
@@ -234,11 +248,13 @@
                     <button type="submit" class="btn btn-primary" id="finishButton">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="thankyou" class="questions">
                   <form id="thankyouForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     <p><strong>Hurrayy!!! You have finished the Quiz</strong></p>
         <div class="container">
         <div class="button">
@@ -249,12 +265,16 @@
       </div>
 
                     <button type="submit" class="btn btn-primary" id="answersButton">View Answers</button>
+                    </div>
+                  </div>
                   </form>
-                </div>
+
               </div>
 
                 <div id="answers" class="questions">
                   <form id="answersForm">
+                      <div class="jumbotron">
+                        <div class="jumbotron" id="jumboid">
                     <p>Here are the answers!!!</p>
                     <ol>
                       <li>Math.floor()</li>
@@ -265,6 +285,8 @@
 
                     </ol>
                     <button type="submit" class="btn btn-primary" id="backButton">Start Over</button>
+                  </div>
+                </div>
                   </form>
                 </div>
 
