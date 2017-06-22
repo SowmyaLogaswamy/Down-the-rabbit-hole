@@ -30,7 +30,7 @@
             <p class="all-triggers" id="element6-trigger">Click on me to bounce</p>
             <li class="list-elements" id="element7-id">XY Coordinates</li><p class="all-triggers" id="element7-trigger">Move Mouse to See XY Coordinates on Browser Window. Current coordinates are <span id="mm"></span></p>
             <li class="list-elements" id="element8-id">Mouse Up/Down</li><p class="all-triggers" id="element8-trigger">Press down, hold, and then release the mouse button over this div element area.<br><br><span id="mud"></span></p>
-            <li class="list-elements" id="element9-id">New Window</li><div id="element9-trigger" class="all-triggers"><p>Click this text to create a new window and get the horizontal coordinates of the new window relative to the screen. Drag the pop-up window around and click the text again</p>
+            <li class="list-elements" id="element9-id">New Window</li><div id="element9-trigger" class="all-triggers"><p>Click this button to create a new window and get the horizontal coordinates of the new window relative to the screen. Drag the pop-up window around and click the button again for new coordinates.</p>
             <button onclick="windowMove()">Window Position</button></div>
             <li class="list-elements" id="element10-id">Playing with Longitude and Latitude</li>
             <div class="all-triggers" id="element10-trigger"><p>Google Map</p>
@@ -85,12 +85,13 @@
         <div id="right-col" class="col-xs-6">
           <h4>What's happening behind the curtain</h4>
           <div class="all-element-details" id="element1-details">
-            <p>Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
-            <p class="code">$("#element1-trigger").click(function() {SHOW SOME TEXT});</p>
+            <p>Clicking on the button triggers a function in JQuery, in this case, an explanation pops up like this one.</p>
+            <p class="code">$("#element1-trigger").click(function() {SHOW THIS TEXT BEHIND THE CURTAIN});</p>
           </div>
           <div class="all-element-details" id="element2-details">
             <p class="detail">By clicking on the Fade In text, the output will now fade in instead of appearing all at once.</p>
-            <p class="code">$("#element2-trigger").click(function() {$("element2-details").fadeIn();});</p>
+            <p class="code">$("#element2-trigger").click(function() {<br>$("element2-details").fadeIn();<br>$("element2-details").fadeOut()<br>});
+            </p>
           </div>
           <div class="all-element-details" id="element3-details">
             <p class="detail">By clicking on the Toggle text, the output will toggle back and forth.</p>
@@ -115,11 +116,18 @@
           </div>
           <div class="all-element-details" id="element6-details">
             <p class="detail"> < marquee> < /marquee> This is a cute feature that animates text using an HTML tag. Although this is considered an obsolete feature, we think that is a simple way to animate a few words for emphasis on a page.</p>
-            <p class="code">$("#element6-trigger").click(function() {$("element6-details").toggle();});</p>
+            <p class="code">
+              var bounce = "I am bouncing";<br>
+              $("#element6-trigger").append<br>('<;p class="bg-ping-pong"><br><;marquee direction="down" width="210" height="35" behavior="alternate">'+bounce+'<;/p');
+            </p>
           </div>
           <div class="all-element-details" id="element7-details">
             <p class="detail">The pageX property of the MouseEvent interface returns the X (horizontal) coordinate in pixels relative to the whole document. The pageY property of the MouseEvent interface returns the Y (vertical) coordinate in pixels relative to the whole document.</p>
-            <p class="code">$("#element7-trigger").click(function() {$("element7-details").toggle();});</p>
+            <p class="code">
+              $(document).mousemove(function(event){<br>
+                $("span#mm").text(event.pageX + ", " + event.pageY);<br>
+              });
+            </p>
           </div>
           <div class="all-element-details" id="element8-details">
             <p class="detail">The mouseup event is fired when a pointing device button is released over an element. The mousedown event if fired when a pointing device button is released over an element.</p>
@@ -128,19 +136,38 @@
           </div>
           <div class="all-element-details" id="element9-details">
             <p class="detail">The window screenX and screenY properties returns the x and y coordinates of the new window relative to the screen. We have paired this with a window.open() method to make the property easier to demonstrate.</p>
-            <p class="code">$("#element8-trigger").click(function() {$("element9-details").toggle();});</p>
+            <p class="code">
+              function windowMove() {
+                var myWindow = window.open("", "window position", "left=0, top=0, width=200, height=400");
+                var winLeft = myWindow.screenLeft ? myWindow.screenLeft : myWindow.screenX;
+                var winTop = myWindow.screenTop ? myWindow.screenTop : myWindow.screenY;
+                myWindow.document.write("<;p>Window Position");
+                myWindow.document.write("<;br><;strong-Horizontal: <;/strong>" + winLeft);
+                myWindow.document.write("<;br><;strong>Vertical: <;/strong>" + winTop + "<;/p>");
+                myWindow.document.write("Drag me around and click the Window Position text again <;hr>"); }
+            </p>
           </div>
           <div class="all-element-details" id="element10-details">
             <p class="detail">This map is generated with a Google API that is populated with a key. It can be customized by selecting what kind of map you want. The initial or subsequent default location can be static or dynamic. This map is currently set to the Seattle Epicodus building location. </p>
-            <p class="code">$("#element10-trigger").click(function() {$("element10-details").toggle();});</p>
+            <p class="code">
+              function myMap(lat, long) {<br>
+              var mapProp= {<br>
+                  center:new google.maps.LatLng<br>(lat,long),<br>
+                  zoom:18,<br>
+              };<br>
+              var map = new google.maps.Map(document.getElementById<br>("googleMap"),mapProp);<br>
+              }<br>
+
+              script src="https://maps.googleapis.com/maps/api">
+              /script>
+            </p>
           </div>
           <div class="all-element-details" id="element11-details">
-            <p class="detail">This is a combination of the Math.floor() and Math.random() that are then used to generate random intergers within a specified range. </p>
-            <p class="code">$("#element11-trigger").click(function() {$("element11-details").toggle();});</p>
+            <p class="detail">This is a combination of the Math.floor() and Math.random() that are then used to generate random intergers within a specified range, in this case 1-100. </p>
+            <p class="code">var randomNumber = Math.floor((Math.random() * 100) + 1);</p>
           </div>
           <div class="all-element-details" id="element12-details">
-
-            <p class="detail">This is actually two functions. The first calculates the area of the circle, and the second rounds it to the nearest integer. We also need to first parse the String input to an integer or float.</p>
+            <p class="detail">This is comprised of two functions. The first calculates the area of the circle, and the second rounds it to the nearest integer. We also need to first parse the String input to an integer or float.</p>
             <p class="code">var inputRadius = parseFloat($("input#diameter").val())/2;<br>var pieArea = Math.PI*(inputRadius*inputRadius);<br>pieArea = Math.round(pieArea);</p>
           </div>
           <div class="all-element-details" id="element13-details">

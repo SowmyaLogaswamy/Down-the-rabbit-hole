@@ -193,12 +193,13 @@ $(document).ready(function() {
    $("li#element7-id").click(function() {
      resetOutput();
      $("#element7-trigger").show();
+     $("#element7-details").show();
    });
 
-   $("#element7-trigger").click(function() {
-     $("#element7-details").show();
-    //  $("span#mm").text(event.pageX + ", " + event.pageY);
-   });
+  //  $("#element7-trigger").click(function() {
+  //    //$("#element7-details").show();
+  //   //  $("span#mm").text(event.pageX + ", " + event.pageY);
+  //  });
 
    $(document).mousemove(function(event){
      $("span#mm").text(event.pageX + ", " + event.pageY);
@@ -259,10 +260,10 @@ $(document).ready(function() {
    $("li#element12-id").click(function() {
      resetOutput();
      $("#element12-trigger").show();
+     $("#element12-details").show();
    });
 
    $("#pie-button").click(function() {
-     $("#element12-details").show();
       var inputRadius = parseFloat($("input#diameter").val())/2;
      $("#area-output").text(pieArea(inputRadius));
    });
