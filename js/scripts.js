@@ -75,7 +75,7 @@ function findAnswers(questionNumber, answerNumber) {
       alert("Correct");
     }
     else if(answerNumber === "oa" || answerNumber === "oc") {
-      alert(" Sorry! Wrong answer");
+      alert("Sorry! Wrong answer");
     }
   }
   if (questionNumber === 2) {
@@ -83,7 +83,7 @@ function findAnswers(questionNumber, answerNumber) {
       alert("Correct");
     }
     else if(answerNumber === "2a") {
-      alert("1. Sorry! Wrong answer");
+      alert("Sorry! Wrong answer");
     }
   }
   if (questionNumber === 3) {
@@ -91,7 +91,7 @@ function findAnswers(questionNumber, answerNumber) {
       alert("Correct");
     }
     else if(answerNumber === "3a" || answerNumber === "3c") {
-      alert("1. Sorry! Wrong answer");
+      alert("Sorry! Wrong answer");
     }
   }
   if (questionNumber === 4) {
@@ -99,7 +99,7 @@ function findAnswers(questionNumber, answerNumber) {
       alert("Correct");
     }
     else if(answerNumber === "4b" || answerNumber === "4a") {
-      alert("1. Sorry! Wrong answer");
+      alert("Sorry! Wrong answer");
     }
   }
   if (questionNumber === 5) {
@@ -107,7 +107,7 @@ function findAnswers(questionNumber, answerNumber) {
       alert("Correct");
     }
     else if(answerNumber === "5b" || answerNumber === "5c") {
-      alert("1. Sorry! Wrong answer");
+      alert("Sorry! Wrong answer");
     }
   }
 }
