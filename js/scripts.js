@@ -68,50 +68,80 @@ var answer2 = "";
 var answer3 = "";
 var answer4 = "";
 var answer5 = "";
+
+var question = 0;
+var answer = "";
+var correct = false;
+
 function findAnswers(questionNumber, answerNumber) {
 
   if (questionNumber === 1) {
     if(answerNumber === "ob") {
-      alert("Correct");
+      return true;
     }
     else if(answerNumber === "oa" || answerNumber === "oc") {
+<<<<<<< HEAD
       alert("Sorry! Wrong answer");
+=======
+      return false;
+>>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 2) {
     if(answerNumber === "2b") {
-      alert("Correct");
+      return true;
     }
     else if(answerNumber === "2a") {
+<<<<<<< HEAD
       alert("Sorry! Wrong answer");
+=======
+      return false;
+>>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 3) {
     if(answerNumber === "3b") {
-      alert("Correct");
+      return true;
     }
     else if(answerNumber === "3a" || answerNumber === "3c") {
+<<<<<<< HEAD
       alert("Sorry! Wrong answer");
+=======
+      return false;
+>>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 4) {
     if(answerNumber === "4c") {
-      alert("Correct");
+      return true;
     }
     else if(answerNumber === "4b" || answerNumber === "4a") {
+<<<<<<< HEAD
       alert("Sorry! Wrong answer");
+=======
+      return false;
+>>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 5) {
     if(answerNumber === "5a") {
-      alert("Correct");
+      return true;
     }
     else if(answerNumber === "5b" || answerNumber === "5c") {
+<<<<<<< HEAD
       alert("Sorry! Wrong answer");
+=======
+      return false;
+>>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
 }
 
+function resetQuiz() {
+  question = 0;
+  answer = "";
+  correct = false;
+}
 
 //USER INTERFACE LOGIC
 function resetOutput() {
@@ -215,10 +245,14 @@ $(document).ready(function() {
      $("p#element8-trigger").mousedown(function(){
        $("#mud").text('MOUSE CLICKED.');
        $("#element8-details").show();
+       $("#element8-img1").show();
+       $("#element8-img2").hide();
      });
      $("p#element8-trigger").mouseup(function() {
        $("#mud").text('MOUSE RELEASED.');
        $("#element8-details").hide();
+       $("#element8-img2").show();
+       $("#element8-img1").hide();
      });
    });
 
@@ -278,6 +312,7 @@ $(document).ready(function() {
    //////////////////////////////////////////////QUIZ SCRIPTS
    $("#quiz-button").click(function() {
    resetOutput();
+   resetQuiz();
 $("#whole-quiz").toggle();
 $("#introPage").toggle();
 // $('input[name=quest1]').attr('checked',false);
@@ -300,11 +335,14 @@ $("#introPage").toggle();
 
    $("#questionOneForm").submit(function(event) {
      event.preventDefault();
-     answer1 = $("input:radio[name='quest1']:checked").val();
-      findAnswers(1, answer1);
+     answer = $("input:radio[name='quest1']:checked").val();
+     question = 1;
+     correct = findAnswers(question, answer);
+      //findAnswers(1, answer1);
+     if (correct === true) { alert("Correct!");} else {alert("Wrong!");}
      $("#introPage").hide();
      // var question1 = $("input:radio[name='quest1']:checked").val();
-
+     resetQuiz();
 
      $("#questionOne").hide( "slide", {direction: "left"}, 200);
      $("#questionTwo").delay(250).show( "slide", {direction: "right"}, 200);
@@ -314,8 +352,14 @@ $("#introPage").toggle();
 
    $("#questionTwoForm").submit(function(event) {
      event.preventDefault();
-     answer2 = $("input:radio[name='quest2']:checked").val();
-      findAnswers(2, answer2);
+
+     answer = $("input:radio[name='quest2']:checked").val();
+     question = 2;
+     correct = findAnswers(question, answer);
+      //findAnswers(1, answer1);
+     if (correct === true) { alert("Correct!");} else {alert("Wrong!");}
+
+     resetQuiz();
       $("#introPage").hide();
       $("#questionOne").hide();
       $("#questionTwo").hide( "slide", {direction: "left"}, 200);
@@ -324,8 +368,13 @@ $("#introPage").toggle();
 
    $("#questionThreeForm").submit(function(event) {
      event.preventDefault();
-     answer3 = $("input:radio[name='quest3']:checked").val();
-      findAnswers(3, answer3);
+
+     answer = $("input:radio[name='quest3']:checked").val();
+     question = 3;
+     correct = findAnswers(question, answer);
+      //findAnswers(1, answer1);
+     if (correct === true) { alert("Correct!");} else {alert("Wrong!");}
+     resetQuiz();
       $("#introPage").hide();
     $("#questionOne").hide();
      $("#questionTwo").hide();
@@ -335,8 +384,13 @@ $("#introPage").toggle();
  });
  $("#questionFourForm").submit(function(event) {
    event.preventDefault();
-   answer4 = $("input:radio[name='quest4']:checked").val();
-    findAnswers(4, answer4);
+
+   answer = $("input:radio[name='quest4']:checked").val();
+   question = 4;
+   correct = findAnswers(question, answer);
+    //findAnswers(1, answer1);
+   if (correct === true) { alert("Correct!");} else {alert("Wrong!");}
+   resetQuiz();
    // $("#introPage").hide();
    // $("#questionOne").hide();
    // $("#questionTwo").hide();
@@ -348,8 +402,12 @@ $("#introPage").toggle();
  });
  $("#questionFiveForm").submit(function(event) {
    event.preventDefault();
-   answer5 = $("input:radio[name='quest5']:checked").val();
-    findAnswers(5, answer5);
+   answer = $("input:radio[name='quest5']:checked").val();
+   question = 5;
+   correct = findAnswers(question, answer);
+    //findAnswers(1, answer1);
+   if (correct === true) { alert("Correct!");} else {alert("Wrong!");}
+   resetQuiz();
    // $("#introPage").hide();
    // $("#questionOne").hide();
    // $("#questionTwo").hide();
