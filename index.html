@@ -13,16 +13,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Down The Rabbit Hole</h1>
-      <h3>Interactive exercises with Javascript/CSS/Html</h3>
+      <div class="page-header">
+        <h1>Down The Rabbit Hole</h1>
+        <h3>Interactive exercises with Javascript/CSS/HTML</h3>
+      </div>
       <div class="row">
-        <div id="left-col" class="col-xs-6">
+        <div id="left-col" class="col-xs-5">
           <h4>Interact with an element below</h4>
           <ol>
             <li class="list-elements" id="element1-id">Click Button</li>
             <button type="button" id="element1-clickbutton" class="btn btn-primary">Click Me</button>
-            <li class="list-elements" id="element2-id">Fade</li><p class="all-triggers" id="element2-trigger">Click on this text to see a Fade In</p>
-            <p class="all-triggers" id="element2b-trigger">Click on this text to see a Fade Out</p>
+            <li class="list-elements" id="element2-id">Fade</li><p class="all-triggers" id="element2-trigger">Click on this text to see a <br>Fade In</p>
+            <p class="all-triggers" id="element2b-trigger">Click on this text to see a <br>Fade Out</p>
             <li class="list-elements" id="element3-id">Toggle</li><p class="all-triggers" id="element3-trigger">Toggle Me</p>
             <li class="list-elements" id="element4-id">Image Slider</li><p class="all-triggers" id="element4-trigger">Click this Text to see a Slideshow</p>
             <li class="list-elements" id="element5-id">Mouse Over/Out</li><p class="all-triggers" id="element5-trigger">Move the pointer over this paragraph and see what happens...if you dare</p>
@@ -32,7 +34,7 @@
             <li class="list-elements" id="element8-id">Mouse Up/Down</li><p class="all-triggers" id="element8-trigger">Press down, hold, and then release the mouse button over this div element area.<br><br><span id="mud"></span></p>
             <li class="list-elements" id="element9-id">New Window</li><div id="element9-trigger" class="all-triggers"><p>Click this text to create a new window and get the horizontal coordinates of the new window relative to the screen. Drag the pop-up window around and click the text again</p>
             <button onclick="windowMove()">Window Position</button></div>
-            <li class="list-elements" id="element10-id">Playing with Longitude and Latitude</li>
+            <li class="list-elements" id="element10-id">Longitude and Latitude</li>
             <div class="all-triggers" id="element10-trigger"><p>Google Map</p>
               <div id="googleMap" style="width:100%;height:300px;"></div>
               <form>
@@ -82,10 +84,12 @@
           </ol>
 
         </div>
+        <div id="center-col" class="col-xs-1">
+        </div>
         <div id="right-col" class="col-xs-6">
           <h4>What's happening behind the curtain</h4>
           <div class="all-element-details" id="element1-details">
-            <p>Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
+            <p class="detail">Clicking on the button triggers a function, in this case, an explanation pops up like this one.</p>
             <p class="code">$("#element1-trigger").click(function() {SHOW SOME TEXT});</p>
           </div>
           <div class="all-element-details" id="element2-details">
