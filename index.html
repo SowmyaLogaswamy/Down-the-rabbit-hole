@@ -127,24 +127,26 @@
               $("p#element8-trigger").mouseup(function() {$("#mud").text('MOUSE RELEASED.');});</p>
           </div>
           <div class="all-element-details" id="element9-details">
-            <p class="detail">blah blah ELEMENT 9</p>
+            <p class="detail">The window screenX and screenY properties returns the x and y coordinates of the new window relative to the screen. We have paired this with a window.open() method to make the property easier to demonstrate.</p>
             <p class="code">$("#element8-trigger").click(function() {$("element9-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element10-details">
-            <p class="detail">blah blah ELEMENT 10</p>
+            <p class="detail">This map is generated with a Google API that is populated with a key. It can be customized by selecting what kind of map you want. The initial or subsequent default location can be static or dynamic. This map is currently set to the Seattle Epicodus building location. </p>
             <p class="code">$("#element10-trigger").click(function() {$("element10-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element11-details">
-            <p class="detail">blah blah ELEMENT 11</p>
+            <p class="detail">This is a combination of the Math.floor() and Math.random() that are then used to generate random intergers within a specified range. </p>
             <p class="code">$("#element11-trigger").click(function() {$("element11-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element12-details">
-            <p class="detail">blah blah ELEMENT 12</p>
-            <p class="code">$("#element12-trigger").click(function() {$("element12-details").toggle();});</p>
+
+            <p class="detail">This is actually two functions. The first calculates the area of the circle, and the second rounds it to the nearest integer. We also need to first parse the String input to an integer or float.</p>
+            <p class="code">var inputRadius = parseFloat($("input#diameter").val())/2;<br>var pieArea = Math.PI*(inputRadius*inputRadius);<br>pieArea = Math.round(pieArea);</p>
           </div>
           <div class="all-element-details" id="element13-details">
-            <p class="detail">blah blah ELEMENT 13</p>
-            <p class="code">$("#element13-trigger").click(function() {$("element13-details").toggle();});</p>
+            <p class="detail">The Color Picker is actually a HTML element, but we use a function in JS to grab the color code and display it on the page, as well as change the text to that color.</p>
+            <p class="code">HTML:<br>input type="color" id="colorWell"<br><br>Javascript Function:<br>colorWell.addEventListener('input', updateFirst, false);<br>colorWell.addEventListener('change', updateAll, false);<br>colorWell.select();<br>$("#color-code").text(colorWell.value);</p>
+
           </div>
         </div>
       </div>
