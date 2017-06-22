@@ -51,7 +51,7 @@ background-color: #bca6a4;
 
 body {
   background-image: url(../img/cupteas.jpg);
-  background-repeat: no-repeat;
+  background-repeat: inherit;
   font-size : 300%;
   background-size: 160%;
   font-variant: small-caps
@@ -106,9 +106,12 @@ h4 {
   text-decoration: none;
 }
 
-
 #whole-quiz {
   display: none;
+}
+
+#quiz-h1 {
+  font-size: 40px;
 }
 
 .questions {
@@ -141,11 +144,11 @@ h4 {
 }
 .jumbotron {
 size: 100%;
-background-color: #b29492;
+background-color: transparent;
 
 }
 #jumboid {
   size: 100%;
-background-color: #fdfbc1;
+background-color: #f6e1c1;
 
 }
