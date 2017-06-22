@@ -147,8 +147,16 @@ size: 100%;
 background-color: transparent;
 
 }
+
 #jumboid {
   size: 100%;
 background-color: #f6e1c1;
+}
 
+#element8-img1 {
+  display: none;
+}
+
+#element8-img2 {
+  display: none;
 }

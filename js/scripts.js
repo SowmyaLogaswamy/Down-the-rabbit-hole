@@ -215,10 +215,14 @@ $(document).ready(function() {
      $("p#element8-trigger").mousedown(function(){
        $("#mud").text('MOUSE CLICKED.');
        $("#element8-details").show();
+       $("#element8-img1").show();
+       $("#element8-img2").hide();
      });
      $("p#element8-trigger").mouseup(function() {
        $("#mud").text('MOUSE RELEASED.');
        $("#element8-details").hide();
+       $("#element8-img2").show();
+       $("#element8-img1").hide();
      });
    });
 
