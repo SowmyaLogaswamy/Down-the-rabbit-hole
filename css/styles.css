@@ -121,3 +121,13 @@ h4 {
 .thankyou {
   display : none;
 }
+.jumbotron {
+size: 100%;
+background-color: #b29492;
+
+}
+#jumboid {
+  size: 100%;
+background-color: #fdfbc1;
+
+}
