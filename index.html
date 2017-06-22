@@ -3,6 +3,8 @@
   <head>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- /<script src="js/scripts2.js"></script> -->
+    <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -141,6 +143,125 @@
           <div class="all-element-details" id="element13-details">
             <p class="detail">blah blah ELEMENT 13</p>
             <p class="code">$("#element13-trigger").click(function() {$("element13-details").toggle();});</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="submit" class="btn" id="quiz-button">TAKE THE QUIZ HERE</button>
+          <div class="container" id="whole-quiz">
+
+              <div id="introPage">
+                <div class="jumbotron">
+                <h1> Quiz (HTML/CSS/Javascript/JQuery)</h1>
+                <p> Please go through the questions and choose the best answer for it</p>
+                <button type="submit" class="btn" id="startButton">GET STARTED TO RACE!</button>
+              </div>
+                </div>
+
+
+                <div id="questionOne" class="questions">
+                  <form id="questionOneForm">
+                    <div class="jumbotron">
+                    What other method is typically used with Math.random to return a whole number?
+                    <div class="radio">
+                      <input type="radio" name="quest1" value="oa">.toString()<br>
+                      <input type="radio" name="quest1" value="ob">Math.floor()<br>
+                      <input type="radio" name="quest1" value="oc">.concat()
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="quest1Button">BANG</button>
+                  </form>
+                </div>
+              </div>
+
+                <div id="questionTwo" class="questions">
+                  <form id="questionTwoForm">
+                    <div class="jumbotron">
+                    Only buttons can be click listeners. Is the statement true or false?
+                    <div class="radio">
+                      <input type="radio" name="quest2" value="2a"> true<br>
+                      <input type="radio" name="quest2" value="2b"> false<br>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="quest2Button">BANG</button>
+                  </form>
+                </div>
+                </div>
+
+                <div id="questionThree" class="questions">
+                  <form id="questionThreeForm">
+                    <div class="jumbotron">
+                    Which function is great for switching between two states?
+                    <div class="radio">
+                      <input type="radio" name="quest3" value="3a"> fadeIn()<br>
+                      <input type="radio" name="quest3" value="3b"> toggle()<br>
+                      <input type="radio" name="quest3" value="3c"> show()
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="quest3Button">BANG</button>
+                  </form>
+                </div>
+              </div>
+
+                <div id="questionFour" class="questions">
+                  <form id="questionFourForm">
+                    <div class="jumbotron">
+                    Which type of value the latitude and longitude input fields take in?
+                    <div class="radio">
+                      <input type="radio" name="quest4" value="4a"> Integers<br>
+                      <input type="radio" name="quest4" value="4b"> Floats<br>
+                      <input type="radio" name="quest4" value="4c"> Strings
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="quest4Button">BANG</button>
+                  </form>
+                </div>
+              </div>
+
+                <div id="questionFive" class="questions">
+                  <form id="questionFiveForm">
+                    <div class="jumbotron">
+                    Which language is responsible for displaying the color picker?
+                    <div class="radio">
+                      <input type="radio" name="quest5" value="5a"> HTML<br>
+                      <input type="radio" name="quest5" value="5b"> CSS<br>
+                      <input type="radio" name="quest5" value="5c"> Javascript
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="finishButton">BANG</button>
+                  </form>
+                </div>
+              </div>
+
+                <div id="thankyou" class="questions">
+                  <form id="thankyouForm">
+                    <div class="jumbotron">
+                    <p><strong>Hurrayy!!! You have finished the Quiz</strong></p>
+        <div class="container">
+        <div class="button">
+          <a href="#">
+            <img id="ending" src="img/ec3cd013-e617-4ddc-8d16-2f2462d668a3.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+
+                    <button type="submit" class="btn btn-primary" id="answersButton">View Answers</button>
+                  </form>
+                </div>
+              </div>
+
+                <div id="answers" class="questions">
+                  <form id="answersForm">
+                    <p>Here are the answers!!!</p>
+                    <ol>
+                      <li>Math.floor()</li>
+                      <li>false</li>
+                      <li>toggle()</li>
+                      <li>Strings</li>
+                      <li>HTML</li>
+
+                    </ol>
+                    <button type="submit" class="btn btn-primary" id="backButton">Start Over</button>
+                  </form>
+                </div>
+
           </div>
         </div>
       </div>
