@@ -44,6 +44,11 @@ background-color: #d49e4e;
 background-color: #bca6a4;
 }
 
+.code {
+  font-size: 70%;
+  font-family: monospace;
+}
+
 body {
   background-image: url(../img/cupteas.jpg);
   background-repeat: no-repeat;
@@ -53,8 +58,16 @@ body {
   font-family: serif;
 }
 
+.page-header {
+    padding-bottom: 7px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #d49e4e;
+}
+
 h1 {
   color: #1d2128;
+  font-family: monospace;
+  font-size: 200%;
 }
 
 h4 {
@@ -62,29 +75,34 @@ h4 {
     font-size : 200%;
 }
 #quiz-button {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  /*background: #3498db;*/
+  /*background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
   background-image: -ms-linear-gradient(top, #3498db, #2980b9);
   background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);*/
+  background-image: url(../img/kitty.jpg);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Georgia;
   color: #ffffff;
-  font-size: 30px;
-  padding: 17px 20px 11px 22px;
+  font-size: 25px;
+  padding: 11px 20px 11px 11px;
   text-decoration: none;
+  height: 156px;
+  width: 330px;
+  font-weight: bold;
 }
 
 #quiz-button:hover {
-  background: #28353d;
+  /*background: #28353d;
   background-image: -webkit-linear-gradient(top, #28353d, #3498db);
   background-image: -moz-linear-gradient(top, #28353d, #3498db);
   background-image: -ms-linear-gradient(top, #28353d, #3498db);
   background-image: -o-linear-gradient(top, #28353d, #3498db);
-  background-image: linear-gradient(to bottom, #28353d, #3498db);
+  background-image: linear-gradient(to bottom, #28353d, #3498db);*/
+  background-image: url(../img/kitty.jpg);
   text-decoration: none;
 }
 
@@ -120,4 +138,14 @@ h4 {
 
 .thankyou {
   display : none;
+}
+.jumbotron {
+size: 100%;
+background-color: #b29492;
+
+}
+#jumboid {
+  size: 100%;
+background-color: #fdfbc1;
+
 }

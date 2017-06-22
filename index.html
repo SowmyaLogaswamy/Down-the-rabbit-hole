@@ -13,16 +13,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Down The Rabbit Hole</h1>
-      <h3>Interactive exercises with Javascript/CSS/Html</h3>
+      <div class="page-header">
+        <h1>Down The Rabbit Hole</h1>
+        <h3>Interactive exercises with Javascript/CSS/HTML</h3>
+      </div>
       <div class="row">
-        <div id="left-col" class="col-xs-6">
+        <div id="left-col" class="col-xs-5">
           <h4>Interact with an element below</h4>
           <ol>
             <li class="list-elements" id="element1-id">Click Button</li>
             <button type="button" id="element1-clickbutton" class="btn btn-primary">Click Me</button>
-            <li class="list-elements" id="element2-id">Fade</li><p class="all-triggers" id="element2-trigger">Click on this text to see a Fade In</p>
-            <p class="all-triggers" id="element2b-trigger">Click on this text to see a Fade Out</p>
+            <li class="list-elements" id="element2-id">Fade</li><p class="all-triggers" id="element2-trigger">Click on this text to see a <br>Fade In</p>
+            <p class="all-triggers" id="element2b-trigger">Click on this text to see a <br>Fade Out</p>
             <li class="list-elements" id="element3-id">Toggle</li><p class="all-triggers" id="element3-trigger">Toggle Me</p>
             <li class="list-elements" id="element4-id">Image Slider</li><p class="all-triggers" id="element4-trigger">Click this Text to see a Slideshow</p>
             <li class="list-elements" id="element5-id">Mouse Over/Out</li><p class="all-triggers" id="element5-trigger">Move the pointer over this paragraph and see what happens...if you dare</p>
@@ -32,7 +34,7 @@
             <li class="list-elements" id="element8-id">Mouse Up/Down</li><p class="all-triggers" id="element8-trigger">Press down, hold, and then release the mouse button over this div element area.<br><br><span id="mud"></span></p>
             <li class="list-elements" id="element9-id">New Window</li><div id="element9-trigger" class="all-triggers"><p>Click this button to create a new window and get the horizontal coordinates of the new window relative to the screen. Drag the pop-up window around and click the button again for new coordinates.</p>
             <button onclick="windowMove()">Window Position</button></div>
-            <li class="list-elements" id="element10-id">Playing with Longitude and Latitude</li>
+            <li class="list-elements" id="element10-id">Longitude and Latitude</li>
             <div class="all-triggers" id="element10-trigger"><p>Google Map</p>
               <div id="googleMap" style="width:100%;height:300px;"></div>
               <form>
@@ -82,11 +84,15 @@
           </ol>
 
         </div>
+        <div id="center-col" class="col-xs-1">
+        </div>
         <div id="right-col" class="col-xs-6">
           <h4>What's happening behind the curtain</h4>
           <div class="all-element-details" id="element1-details">
+
             <p>Clicking on the button triggers a function in JQuery, in this case, an explanation pops up like this one.</p>
             <p class="code">$("#element1-trigger").click(function() {SHOW THIS TEXT BEHIND THE CURTAIN});</p>
+
           </div>
           <div class="all-element-details" id="element2-details">
             <p class="detail">By clicking on the Fade In text, the output will now fade in instead of appearing all at once.</p>
@@ -184,16 +190,19 @@
 
               <div id="introPage">
                 <div class="jumbotron">
+                  <div class="jumbotron" id="jumboid">
                 <h1> Quiz (HTML/CSS/Javascript/JQuery)</h1>
                 <p> Please go through the questions and choose the best answer for it</p>
-                <button type="submit" class="btn" id="startButton">GET STARTED TO RACE!</button>
+                <button type="submit" class="btn btn-primary" id="startButton">GET STARTED TO RACE!</button>
               </div>
+            </div>
                 </div>
 
 
                 <div id="questionOne" class="questions">
                   <form id="questionOneForm">
                     <div class="jumbotron">
+                        <div class="jumbotron" id="jumboid">
                     What other method is typically used with Math.random to return a whole number?
                     <div class="radio">
                       <input type="radio" name="quest1" value="oa">.toString()<br>
@@ -201,13 +210,16 @@
                       <input type="radio" name="quest1" value="oc">.concat()
                     </div>
                     <button type="submit" class="btn btn-primary" id="quest1Button">BANG</button>
+                    <p class="result"></p>
                   </form>
+                  </div>
                 </div>
               </div>
 
                 <div id="questionTwo" class="questions">
                   <form id="questionTwoForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Only buttons can be click listeners. Is the statement true or false?
                     <div class="radio">
                       <input type="radio" name="quest2" value="2a"> true<br>
@@ -218,10 +230,12 @@
                   </form>
                 </div>
                 </div>
+                </div>
 
                 <div id="questionThree" class="questions">
                   <form id="questionThreeForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which function is great for switching between two states?
                     <div class="radio">
                       <input type="radio" name="quest3" value="3a"> fadeIn()<br>
@@ -231,11 +245,13 @@
                     <button type="submit" class="btn btn-primary" id="quest3Button">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="questionFour" class="questions">
                   <form id="questionFourForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which type of value the latitude and longitude input fields take in?
                     <div class="radio">
                       <input type="radio" name="quest4" value="4a"> Integers<br>
@@ -245,11 +261,13 @@
                     <button type="submit" class="btn btn-primary" id="quest4Button">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="questionFive" class="questions">
                   <form id="questionFiveForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     Which language is responsible for displaying the color picker?
                     <div class="radio">
                       <input type="radio" name="quest5" value="5a"> HTML<br>
@@ -259,11 +277,13 @@
                     <button type="submit" class="btn btn-primary" id="finishButton">BANG</button>
                   </form>
                 </div>
+                </div>
               </div>
 
                 <div id="thankyou" class="questions">
                   <form id="thankyouForm">
                     <div class="jumbotron">
+                      <div class="jumbotron" id="jumboid">
                     <p><strong>Hurrayy!!! You have finished the Quiz</strong></p>
         <div class="container">
         <div class="button">
@@ -274,12 +294,16 @@
       </div>
 
                     <button type="submit" class="btn btn-primary" id="answersButton">View Answers</button>
+                    </div>
+                  </div>
                   </form>
-                </div>
+
               </div>
 
                 <div id="answers" class="questions">
                   <form id="answersForm">
+                      <div class="jumbotron">
+                        <div class="jumbotron" id="jumboid">
                     <p>Here are the answers!!!</p>
                     <ol>
                       <li>Math.floor()</li>
@@ -290,6 +314,8 @@
 
                     </ol>
                     <button type="submit" class="btn btn-primary" id="backButton">Start Over</button>
+                  </div>
+                </div>
                   </form>
                 </div>
 
