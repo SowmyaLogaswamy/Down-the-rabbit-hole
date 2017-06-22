@@ -80,11 +80,7 @@ function findAnswers(questionNumber, answerNumber) {
       return true;
     }
     else if(answerNumber === "oa" || answerNumber === "oc") {
-<<<<<<< HEAD
-      alert("Sorry! Wrong answer");
-=======
       return false;
->>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 2) {
@@ -92,11 +88,7 @@ function findAnswers(questionNumber, answerNumber) {
       return true;
     }
     else if(answerNumber === "2a") {
-<<<<<<< HEAD
-      alert("Sorry! Wrong answer");
-=======
       return false;
->>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 3) {
@@ -104,11 +96,7 @@ function findAnswers(questionNumber, answerNumber) {
       return true;
     }
     else if(answerNumber === "3a" || answerNumber === "3c") {
-<<<<<<< HEAD
-      alert("Sorry! Wrong answer");
-=======
       return false;
->>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 4) {
@@ -116,11 +104,7 @@ function findAnswers(questionNumber, answerNumber) {
       return true;
     }
     else if(answerNumber === "4b" || answerNumber === "4a") {
-<<<<<<< HEAD
-      alert("Sorry! Wrong answer");
-=======
       return false;
->>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
   if (questionNumber === 5) {
@@ -128,11 +112,7 @@ function findAnswers(questionNumber, answerNumber) {
       return true;
     }
     else if(answerNumber === "5b" || answerNumber === "5c") {
-<<<<<<< HEAD
-      alert("Sorry! Wrong answer");
-=======
       return false;
->>>>>>> 0cf7ba1544b852f47f89c2a1da8223bd8d9d012e
     }
   }
 }
@@ -311,6 +291,7 @@ $(document).ready(function() {
 
    //////////////////////////////////////////////QUIZ SCRIPTS
    $("#quiz-button").click(function() {
+     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
    resetOutput();
    resetQuiz();
 $("#whole-quiz").toggle();
@@ -330,11 +311,13 @@ $("#introPage").toggle();
      $("#introPage").hide();
      //$("form#questionOneForm").show();
      $("#questionOne").fadeIn(700);
+     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
    });
 
    $("#questionOneForm").submit(function(event) {
      event.preventDefault();
+     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
      answer = $("input:radio[name='quest1']:checked").val();
      question = 1;
      correct = findAnswers(question, answer);
@@ -352,6 +335,7 @@ $("#introPage").toggle();
 
    $("#questionTwoForm").submit(function(event) {
      event.preventDefault();
+     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
      answer = $("input:radio[name='quest2']:checked").val();
      question = 2;
@@ -368,7 +352,7 @@ $("#introPage").toggle();
 
    $("#questionThreeForm").submit(function(event) {
      event.preventDefault();
-
+     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
      answer = $("input:radio[name='quest3']:checked").val();
      question = 3;
      correct = findAnswers(question, answer);
@@ -384,7 +368,7 @@ $("#introPage").toggle();
  });
  $("#questionFourForm").submit(function(event) {
    event.preventDefault();
-
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
    answer = $("input:radio[name='quest4']:checked").val();
    question = 4;
    correct = findAnswers(question, answer);
@@ -402,6 +386,7 @@ $("#introPage").toggle();
  });
  $("#questionFiveForm").submit(function(event) {
    event.preventDefault();
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
    answer = $("input:radio[name='quest5']:checked").val();
    question = 5;
    correct = findAnswers(question, answer);
@@ -420,7 +405,7 @@ $("#introPage").toggle();
 
  $("#thankyouForm").submit(function(event) {
    event.preventDefault();
-
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
    // $('#ending').effect( 'bounce', { times: 3 }, 'slow');
    $('#ending').click(function() {
      // alert('alert!');
@@ -436,6 +421,7 @@ $("#introPage").toggle();
  });
  $("#answersForm").submit(function(event) {
    event.preventDefault();
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
    $("#introPage").delay(250).show( "slide", {direction: "right"}, 200);
    // $("#questionOne").hide();
    // $("#questionTwo").hide();
