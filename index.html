@@ -139,12 +139,12 @@
             <p class="code">$("#element11-trigger").click(function() {$("element11-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element12-details">
-            <p class="detail">blah blah ELEMENT 12</p>
-            <p class="code">$("#element12-trigger").click(function() {$("element12-details").toggle();});</p>
+            <p class="detail">This is actually two functions. The first calculates the area of the circle, and the second rounds it to the nearest integer. We also need to first parse the String input to an integer or float.</p>
+            <p class="code">var inputRadius = parseFloat($("input#diameter").val())/2;<br>var pieArea = Math.PI*(inputRadius*inputRadius);<br>pieArea = Math.round(pieArea);</p>
           </div>
           <div class="all-element-details" id="element13-details">
-            <p class="detail">blah blah ELEMENT 13</p>
-            <p class="code">$("#element13-trigger").click(function() {$("element13-details").toggle();});</p>
+            <p class="detail">The Color Picker is actually a HTML element, but we use a function in JS to grab the color code and display it on the page, as well as change the text to that color.</p>
+            <p class="code">HTML:<br>input type="color" id="colorWell"<br><br>Javascript Function:<br>colorWell.addEventListener('input', updateFirst, false);<br>colorWell.addEventListener('change', updateAll, false);<br>colorWell.select();<br>$("#color-code").text(colorWell.value);</p>
           </div>
         </div>
       </div>

@@ -210,12 +210,14 @@ $(document).ready(function() {
    });
 
    $("#element8-trigger").click(function() {
-     $("#element8-details").show();
+    //  $("#element8-details").show();
      $("p#element8-trigger").mousedown(function(){
        $("#mud").text('MOUSE CLICKED.');
+       $("#element8-details").show();
      });
      $("p#element8-trigger").mouseup(function() {
        $("#mud").text('MOUSE RELEASED.');
+       $("#element8-details").hide();
      });
    });
 
