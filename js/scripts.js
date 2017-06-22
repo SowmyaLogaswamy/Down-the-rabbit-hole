@@ -137,7 +137,7 @@ $(document).ready(function() {
 
    $("#element6-trigger").click(function() {
       var bounce = "I am bouncing";
-      $("#element6-trigger").append('<p class="bg-ping-pong"><marquee direction="down" width="100" height="30" behavior="alternate">'+bounce+'</p');
+      $("#element6-trigger").append('<p class="bg-ping-pong"><marquee direction="down" width="210" height="35" behavior="alternate">'+bounce+'</p');
       $("#element6-details").show();
    });
 

@@ -107,20 +107,22 @@
              });</p>
           </div>
           <div class="all-element-details" id="element5-details">
-            <p class="detail">blah blah ELEMENT 5</p>
-            <p class="code">$("#element5-trigger").click(function() {$("element3-details").toggle();});</p>
+            <p class="detail">By moving the mouse pointer over the targeted screen area, a variety of effects can be generated. In this case we used the .show() and .hide() effects.</p>
+            <p class="code">$("#element5-trigger").mouseover(function(){$("#element5-details").show(); });
+            $("#element5-trigger").mouseout(function() {$("#element5-details").hide();});</p>
           </div>
           <div class="all-element-details" id="element6-details">
-            <p class="detail">blah blah ELEMENT 6</p>
+            <p class="detail"> < marquee> < /marquee> This is a cute feature that animates text using an HTML tag. Although this is considered an obsolete feature, we think that is a simple way to animate a few words for emphasis on a page.</p>
             <p class="code">$("#element6-trigger").click(function() {$("element6-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element7-details">
-            <p class="detail">blah blah ELEMENT 7</p>
+            <p class="detail">The pageX property of the MouseEvent interface returns the X (horizontal) coordinate in pixels relative to the whole document. The pageY property of the MouseEvent interface returns the Y (vertical) coordinate in pixels relative to the whole document.</p>
             <p class="code">$("#element7-trigger").click(function() {$("element7-details").toggle();});</p>
           </div>
           <div class="all-element-details" id="element8-details">
-            <p class="detail">blah blah ELEMENT 8</p>
-            <p class="code">$("#element8-trigger").click(function() {$("element8-details").toggle();});</p>
+            <p class="detail">The mouseup event is fired when a pointing device button is released over an element. The mousedown event if fired when a pointing device button is released over an element.</p>
+            <p class="code">$("p#element8-trigger").mousedown(function(){$("#mud").text('MOUSE CLICKED.');});
+              $("p#element8-trigger").mouseup(function() {$("#mud").text('MOUSE RELEASED.');});</p>
           </div>
           <div class="all-element-details" id="element9-details">
             <p class="detail">blah blah ELEMENT 9</p>
